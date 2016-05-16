@@ -1,0 +1,398 @@
+@import url(https://fonts.googleapis.com/css?family=Jaldi);
+
+/*** Navigation Section ****/
+
+nav {
+ z-index: 100;
+ text-align: center;
+ display: block;
+ overflow: auto;
+ font-size: 14px;
+ background-color: #203548;
+ width: 100%;
+ position: relative;
+}
+
+nav a {
+ text-decoration: none;
+ color: aliceblue;
+ font-size: 1.3em;
+ padding: 20px 20px;
+}
+
+nav li {
+ display: inline-block;
+ text-decoration: none;
+ text-align: center;
+ width: auto;
+ padding: 15px 10px;
+}
+
+
+/*** END of Navigation Section ****/
+
+body {
+ font-family: 'Jaldi', sans-serif;
+ color: #555555;
+ background: url('../img/toronto.jpg') no-repeat;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: left;
+ line-height: 30px;
+ min-width: 360px;
+}
+
+hr {
+ background: #99CC00;
+ height: 1px;
+ border: 0;
+}
+
+
+/***** index Section ****/
+
+.mjheading h1 {
+ margin: 0 auto;
+}
+
+.ContainerBody {
+ width: 70%;
+ margin: 0 auto;
+ margin-top: 5%;
+ background-color: #f5f5f5;
+ border-radius: 10px;
+ display: block;
+}
+
+.ContainerContent {
+ padding: 0 30px;
+}
+
+.spanimg {
+ width: 100%;
+ border-radius: 10px;
+}
+
+.profileimg {
+ border-radius: 60px;
+ padding: 0 10px;
+ height: 100px;
+}
+
+.topspan {
+ margin: 0 auto;
+ text-align: center;
+}
+
+
+/***** END index Section ****/
+
+
+/****** COMP229 Section ******/
+
+.button {
+ display: block;
+ max-width: 130px;
+ height: 25px;
+ background: green;
+ padding: 10px;
+ text-align: center;
+ border-radius: 5px;
+ color: whitesmoke;
+ font-weight: bold;
+}
+
+.assgncontainer {
+ padding: 10px 30px;
+}
+
+.assgncontainer li {
+ list-style: none;
+ padding: 10px 0;
+}
+
+.assgncontainer a {
+ text-decoration: none;
+ margin: 0 auto;
+}
+
+.assgncontainer h1 {
+ text-align: center;
+}
+
+
+/****** END COMP229 Section ******/
+
+
+/**** Future Projects section ****/
+
+.fpbody {
+ background-color: whitesmoke;
+ height: auto;
+ border-radius: 25px;
+ width: 50%;
+ margin: 0 auto;
+ margin-top: 5%;
+}
+
+.fpheading {
+ text-align: center;
+ line-height: 60px;
+ color: lightgrey;
+ padding: 50px 20px;
+}
+
+
+/**** END Future Projects section ****/
+
+
+/****** Assignment 2 Section ******/
+
+body.AssgnBody {
+ background: none;
+ z-index: 0;
+}
+
+.bannerpic img {
+ position: relative;
+ width: 100%;
+ display: block;
+}
+
+.bannerpic p {
+ position: absolute;
+ top: 40%;
+ color: ghostwhite;
+ width: 100%;
+}
+
+.bannertxt {
+ text-align: center;
+ font-size: 40px;
+ font-weight: bold;
+ line-height: 65px;
+}
+
+.ContainerAssgn {
+ width: 70%;
+ margin: 40px auto;
+ background-color: #fbfbfb;
+ border-radius: 10px;
+}
+
+.BannerSec {
+ width: 70%;
+ margin: 0 auto;
+ background-color: none;
+ border-radius: 10px;
+ color: black;
+}
+
+.DateTime {
+ display: block;
+}
+
+#time,
+#date {
+ display: inline-block;
+ padding: 10px 10px;
+ font-size: 13px;
+}
+
+#date {}
+
+#time {
+ float: right;
+}
+
+.ProdArea {
+ width: 100%;
+ margin: 0 auto;
+ display: block;
+ padding: 10px;
+}
+
+.ProdPic {
+ display: inline-block;
+ width: 40%;
+ padding: 10px;
+ float: left;
+}
+
+.ProdPic img {
+ width: 100%;
+ border-radius: 5px;
+}
+
+.ProdInfo {
+ display: inline-block;
+ width: 50%;
+ padding: 10px;
+}
+
+.ProdInfo h2 {
+ font-size: 18px;
+}
+
+.ProdPrice {
+ color: forestgreen;
+ font-size: 20px;
+ display: block;
+}
+
+.OrdOpt {
+ display: block;
+ width: 100%;
+}
+
+.ProdOptQty {
+ display: inline-block;
+ padding: 10px;
+}
+
+.ProdOptQty input {
+ display: inline-block;
+ width: 80px;
+ border-radius: 10px;
+ box-shadow: none;
+ color: darkgrey;
+ text-align: center;
+}
+
+.ProdOptSize {
+ display: inline-block;
+ padding: 10px;
+ border: none;
+}
+
+.ProdOptSize input {
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ display: inline-block;
+ width: 50px;
+ text-align: center;
+ border-radius: 10px;
+ box-shadow: none;
+ color: darkgrey;
+ text-align: center;
+}
+
+.ProdOptCol {
+ display: inline-block;
+ padding: 10px;
+ border: none;
+}
+
+.ProdOptCol select {
+ display: inline-block;
+ width: 80px;
+ text-align: center;
+ border-radius: 8px;
+ border: 0px solid darkgrey;
+ color: darkgrey;
+}
+
+.AddCart {
+ display: inline-block;
+ padding: 10px;
+}
+
+.AddCart button {
+ position: relative;
+ vertical-align: top;
+ width: 120%;
+ height: 40px;
+ padding: 0;
+ color: white;
+ text-align: center;
+ text-shadow: 0 1px 2px #8e8e8e;
+ background: #ef9d19;
+ border: 0;
+ border-radius: 5px;
+ border-bottom: 2px solid #e8930c;
+ cursor: pointer;
+ -webkit-box-shadow: inset 0 -2px #e8930c;
+ box-shadow: inset 0 -2px #e99105;
+}
+
+#hrprod {
+ background: #ebebeb;
+ height: 1px;
+ border: 0;
+}
+
+.Output {
+ display: block;
+ margin: 0 auto;
+ width: 100%;
+ font-size: 18px;
+}
+
+.OutputArea {
+ color: red;
+ font-style: italic;
+ width: auto;
+}
+
+
+/****** END Assignment 2 Section ******/
+
+
+/****** Assignment 3 Section ******/
+
+.form-main {
+ width: 25%;
+ min-width: 220px;
+ margin: 30px auto;
+ margin-top: 100px;
+ padding: 15px;
+ border-radius: 10px;
+ background-color: white;
+}
+
+.form-main input {
+ width: 100%;
+ min-width: 200px;
+ padding: 15px 0;
+ display: block;
+ font-size: 20px;
+}
+
+.form-main input[type=text] {
+ margin: auto auto;
+}
+
+.form-main input[type=submit] {
+ border-radius: 10px;
+ box-shadow: none;
+ font-weight: bold;
+}
+
+.rgbtn,
+.clrbtn {
+ padding: 20px 0;
+}
+
+.regbtn input[type=submit] {
+ background-color: limegreen;
+ color: white;
+}
+
+.clrbtn input[type=submit] {
+ background-color: black;
+ color: white;
+}
+
+.copy {
+ color: black;
+ font-size: 14px;
+ text-align: center;
+}
+
+.heading {
+ color: black;
+}
+
+
+/****** END Assignment 3 Section ******/

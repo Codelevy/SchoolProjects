@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <!-- Name: André Levy | Student Number: 300 826 634 -->
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, intial-scale=1">
+ <meta name="description" content="Wearable Fitness Technology product retailer. Shipping from and serving primarily the province of Toronto, Ontario Canada.">
+ <meta name="author" content="André Levy">
+ <link href="../css/normalize.css" rel="stylesheet">
+ <link href="../css/style.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+ <!-- script src="../js/assignment2.js"></script -->
+ <script src="../js/date.js"></script>
+ <script src="../js/time.js"></script>
+ <title>Click & Mortar | Wearable Fitness Technology retailer</title>
+</head>
+
+<body class="AssgnBody">
+ <nav class="primaryNav">
+  <ul class="nav">
+   <li><a href="../index.html" tabindex="0"><i class="fa fa-home fa-fw"></i> Home</a></li>
+   <li><a href="comp229.html"><i class="fa fa-book"></i> COMP229</a></li>
+   <li><a href="../futureProjects/futureprojects.html"><i class="fa fa-line-chart"></i> Future Projects</a></li>
+   <li><a href="https://my.centennialcollege.ca"><i class="fa fa-graduation-cap"></i> myCentennial</a></li>
+  </ul>
+ </nav>
+
+ <div class="bannerpic">
+  <img src="../img/StoreIMG/backgroundbannerfitbit.jpg" alt="fitbit is more rugged">
+  <p class="bannertxt">Get healthy with Fitbits all new Flex</p>
+ </div>
+ <!--
+ <div class="BannerSec">
+  <div class="assgncontainer">
+   <div class="assgn2body">
+    
+
+   </div>
+  </div>
+ </div>
+ -->
+ <div class="ContainerAssgn">
+  <div class="assgncontainer">
+   <div class="assgn2body">
+    <h1>Fitbit Flex</h1>
+    <div class="DateTime">
+     <!-------------- Date Code -------------------->
+     <p id="date">
+      <script>
+       var monthNames = [
+  "January", "February", "March",
+  "April", "May", "June", "July",
+  "August", "September", "October",
+  "November", "December"
+      ];
+
+       var date = new Date();
+       var day = date.getDate();
+       var monthIndex = date.getMonth();
+       var year = date.getFullYear();
+
+       console.log(day, monthNames[monthIndex], year);
+       document.write('Current Date: ' + monthNames[monthIndex] + ' ' + day + '-th,' + ' ' + year);
+      </script>
+     </p>
+     <!-------------- END Date Code -------------------->
+     <!-------------- Time Code -------------------->
+
+     <p id="time">
+      <script>
+       function checkTime(i) {
+        if (i < 10) {
+         i = "0" + i;
+        }
+        return i;
+       }
+
+       function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        // add a zero in front of numbers<10
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('time').innerHTML = 'Current Time: ' + h + ":" + m + ":" + s;
+        t = setTimeout(function () {
+         startTime()
+        }, 500);
+       }
+       startTime();
+      </script>
+     </p>
+
+     <!-------------- END Time Code -------------------->
+    </div>
+
+    <div class="ProdArea">
+     <div class="ProdPic">
+      <img src="../img/StoreIMG/blackfitbit.jpg" alt="Fitbit wearable black">
+     </div>
+     <div class="ProdInfo">
+      <div class="ProdTitle"></div>
+      <div class="ProdSubTitle">
+       <h2> Wireless Activity + Sleep Wristband</h2>
+      </div>
+      <hr id="hrprod">
+      <div class="ProdDescr">
+       <ul class="ProdInfoBullet">
+        <li>Tracks steps, distance, calories burned and active minutes</li>
+        <li>Monitor how long and well you sleep</li>
+        <li>Wakes you (and not your partner) with a silent wake alarm</li>
+        <li>LED lights show how your day is stacking up against your goal</li>
+        <li>Slim, comfortable and easy to wear (includes large and small wristbands)</li>
+       </ul>
+      </div>
+      <div class="ProdPrice">
+       <h3>$130.00 CAD</h3>
+      </div>
+      <hr id="hrprod">
+      <div class="OrdOpt">
+       <div class="ProdOptQty">
+        <input type="number" name="quantity" min="1" max="10" placeholder="Quantity">
+       </div>
+       <div class="ProdOptSize">
+        <input type="number" name="size" min="1" max="3" placeholder="Size">
+       </div>
+       <div class="ProdOptCol">
+        <select>
+         <option value="" disabled selected>Color</option>
+         <option value="red">Red</option>
+         <option value="blue">Blue</option>
+         <option value="green">Green</option>
+         <option value="orange">Orange</option>
+        </select>
+       </div>
+       <div class="AddCart">
+        <button type="button"><i class="fa fa-cart-plus"></i> Add to Cart</button>
+       </div>
+      </div>
+
+      <hr id="hrprod">
+     </div>
+    </div>
+
+
+    <h2>Your favorite brand is:</h2>
+    <div class="OutputArea">
+     <p id="Output">
+      <!-- Loop -->
+
+
+      <script>
+       var brand = prompt("What is your favorite brand of wearable technology projects?");
+       var likeit = prompt("On a scale of 1 to 100, how much do you like it?");
+       var numInput = parseInt(likeit);
+       var intI;
+       for (intI = 1; intI <= numInput; intI++) {
+        document.writeln(brand + ' ');
+       }
+       document.getElementById("Output").writeln(brand);
+      </script>
+
+     </p>
+    </div>
+
+   </div>
+  </div>
+ </div>
+ </div>
+</body>
+
+</html>
